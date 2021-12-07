@@ -1,3 +1,54 @@
 .wrapper {
+    width: 500px;
 
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.cell {
+    height: 110px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center; /*Центрирование по горизонтали*/
+    align-items: center; /*Центрирование по вертикали */
+}
+
+.rightDiagonalCrossing {
+    background: linear-gradient(to top left,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) calc(50% - 0.8px),
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) calc(50% + 0.8px),
+    rgba(0, 0, 0, 0) 100%)
+}
+
+.leftDiagonalCrossing {
+    background: linear-gradient(to top right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) calc(50% - 0.8px),
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) calc(50% + 0.8px),
+    rgba(0, 0, 0, 0) 100%);
+}
+.horizontalCrossing {
+    background: linear-gradient(to top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) calc(50% - 0.8px),
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) calc(50% + 0.8px),
+    rgba(0, 0, 0, 0) 100%);
+}
+.verticalCrossing {
+    background: linear-gradient(to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) calc(50% - 0.8px),
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) calc(50% + 0.8px),
+    rgba(0, 0, 0, 0) 100%);
+}
+.cellValue {
+    font-size: 40px;
 }
